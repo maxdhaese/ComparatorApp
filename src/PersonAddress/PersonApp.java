@@ -12,11 +12,17 @@ public class PersonApp {
         AgeComparator ageComparator = new AgeComparator();
         ZipCodeComperator zipCodeComperator = new ZipCodeComperator();
 
+        showPersonThatCameFirstAfterComparing(person1,person2,nameComparator);
+        showPersonThatCameFirstAfterComparing(person1,person2,ageComparator);
+        showPersonThatCameFirstAfterComparing(person1,person2,zipCodeComperator);
+
 
     }
 
-    public static int showPersonThatCameFirstAfterComparing(Person person1, Person person2,Comparator<Person>comparator){
+    public static void showPersonThatCameFirstAfterComparing(Person person1, Person person2,Comparator<Person>comparator){
 
     }
+
+
 
 }
