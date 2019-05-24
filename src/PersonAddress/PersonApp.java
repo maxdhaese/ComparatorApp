@@ -13,14 +13,19 @@ public class PersonApp {
         ZipCodeComperator zipCodeComperator = new ZipCodeComperator();
 
         showPersonThatCameFirstAfterComparing(person1,person2,nameComparator);
-        showPersonThatCameFirstAfterComparing(person1,person2,ageComparator);
-        showPersonThatCameFirstAfterComparing(person1,person2,zipCodeComperator);
+        
 
 
     }
 
     public static void showPersonThatCameFirstAfterComparing(Person person1, Person person2,Comparator<Person>comparator){
+        if (comparator.compare(person1,person2) == 0){
+            System.out.println(person1);
 
+        }else if (comparator.compare(person1,person2) > 1){
+            System.out.println(person1);
+        }else
+            System.out.println(person2);
     }
 
 
